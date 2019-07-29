@@ -21,6 +21,13 @@ public class ProgettiController {
     public String main(Model model) {
         model.addAttribute("message", message);
         model.addAttribute("tasks", tasks);
-        return "welcome"; //view
+        return "index"; //view
+    }
+    
+    @GetMapping("/user")
+    public String user(Model model) {
+        model.addAttribute("message", message);
+        model.addAttribute("tasks", tasks);
+        return "index"; //view
     }
 }
